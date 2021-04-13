@@ -16,9 +16,9 @@
 <%if(request.getParameter("duree")==null){%>
 
 	<form action="affepargne" method="get">
-	<p>Durée en mois&ensp;<input type=text name="duree" ></p>
-	<p>Versement&ensp;&ensp;&ensp;&ensp;<input type=text name="versement" ></p>
-	<p>Taux&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;       <input type=text name="taux"></p>
+	<p>Durée en mois&ensp;<input type=text name="duree" value="12"></p>
+	<p>Versement&ensp;&ensp;&ensp;&ensp;<input type=text name="versement" value="10"></p>
+	<p>Taux&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;       <input type=text name="taux" value="10"></p>
 	<p><input type="submit" value="Calcul investissement"></p>
 	</form>
 <%}else{ %>
