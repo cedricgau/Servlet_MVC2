@@ -8,9 +8,7 @@
 <title>Site d'Epargne</title>
 </head>
 <body>
-<p>
-<img src="image/logo-HSBC.jpg">
-</p>
+<p><img alt="HSBC" src="image/hsbc.png" ></p>
 <h1>Votre Projet d'épargne</h1>
 
 <%if(request.getParameter("duree")==null){%>
@@ -19,6 +17,7 @@
 	<p>Durée en mois&ensp;<input type=text name="duree" value="12"></p>
 	<p>Versement&ensp;&ensp;&ensp;&ensp;<input type=text name="versement" value="10"></p>
 	<p>Taux&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;       <input type=text name="taux" value="10"></p>
+	<input type="hidden" name="whom" value="formulaireEpargne">
 	<p><input type="submit" value="Calcul investissement"></p>
 	</form>
 <%}else{ %>
@@ -32,7 +31,7 @@
 		<% if(bean.getErrors().get("versement")!=null){%><% out.println("<font color=#FF0000>");%><%=bean.getErrors().get("versement")%><% out.println("</font>");%><%} %>
 		<% out.println("</p><p>Taux<input type=text name='taux' value='2'>");%>
 		<% if(bean.getErrors().get("taux")!=null){%><% out.println("<font color=#FF0000>");%><%=bean.getErrors().get("taux")%><% out.println("</font>");%><%} %>
-		<% out.println("</p><p><input type='submit' value='Calcul investissement'></p></form>"); %>
+		<% out.println("</p><input type='hidden' name='whom' value='formulaireEpargne'><p><input type='submit' value='Calcul investissement'></p></form>"); %>
 <%} %>
 </body>
 </html>

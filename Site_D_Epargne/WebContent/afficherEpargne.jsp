@@ -10,9 +10,9 @@
 <title>Affichage de l'Epargne</title>
 </head>
 <body>
-<p>
-<img src="image/logo-HSBC.jpg">
-</p>
+
+<p><img alt="HSBC" src="image/hsbc.png" ></p>
+
 
 <h1>Votre Projet d'épargne</h1>
 
@@ -31,6 +31,7 @@
 <p> nom &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" name="nom" value="gautier"> </p>
 <p> prénom &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" name="prenom" value="cedric"> </p>
 <p> Votre numéro de compte <input type="text" name="compte" value="025545896610100"> </p>
+<input type="hidden" name="whom" value="formulaireRdv">
 <p> <input type="hidden" name="montant" value='<jsp:getProperty property="montant" name="bean2"/>'>
 <p><input type="submit" value="Prendre un rendez-vous"></p>
 </form>

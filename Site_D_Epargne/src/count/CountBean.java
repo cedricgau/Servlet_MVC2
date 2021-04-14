@@ -1,6 +1,6 @@
 package count;
 
-public class CountBean {
+public class CountBean implements IFormBean {
 	private int duree=0;
 	private int versement=0;
 	private float taux= 0;

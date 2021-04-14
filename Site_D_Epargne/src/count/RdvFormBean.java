@@ -2,7 +2,7 @@ package count;
 
 import java.util.Date;
 
-public class RdvFormBean {
+public class RdvFormBean implements IFormBean{
 	private Date dateDemande= new Date();
 	private String nom="";
 	private String prenom="";

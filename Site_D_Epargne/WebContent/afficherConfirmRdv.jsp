@@ -7,6 +7,7 @@
 <title>Demande de Rendez-vous réussi</title>
 </head>
 <body>
+<p><img alt="HSBC" src="image/hsbc.png" ></p>
 <p>Votre demande de rendez-vous a bien été pris en compte. Un de nos conseillés vous recontactera par téléphone</p>
 <p><a href="formulaireEpargne.jsp">Autre simulation</a>
 
